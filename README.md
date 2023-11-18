@@ -36,21 +36,16 @@ Follow the instructions below to run each Flask project:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/serem53/Flask-Assignments.git
     ```
 
-2. Change into the project directory:
-
-    ```bash
-    cd your-repository
-    ```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Run the Flask app:
-
+4. Run the Flask app you want for example:
+     1st_project.py
     ```bash
+    
