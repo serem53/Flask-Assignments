@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Real-time Data Update</title>
+</head>
+<body>
+  <h1>Real-time Data:</h1>
+  <div id="realtime-data"></div>
+
+  <input id="input" placeholder="Enter update here"/>
+  <button id="sendBtn">Send</button>
+
+  <script>
+       
+       //Establishing web-socket connection to sever
+       var socket = io.connect("http://127.0.0.1:5000/");
+    
+       socket.on("update_data", function(data) {
+           console.log(data);
+           document.getElementById("realtime-data").innerHTML = data;       
+       });
+
+       $('#sendBtn').on('click',function() {
+            var data = document.getElementById('input').value;
+            socket.send(data);
+            document.getElementById('input').value = '';
+
+          
+       });
+
+
+  </script>
+
+
+
+
+</body>

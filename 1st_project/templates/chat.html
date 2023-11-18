@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Real-time Chat</title>
+</head>
+<body>
+
+    <div class="messages">
+        <ul id="messageList"></ul>
+        <input placeholder="Message" id="message_input"/>
+        <button id="sendBtn">Send</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var socket = io.connect("http://127.0.0.1:5000/");
+
+            // Event handler for receiving messages
+            socket.on('message', function(data) {
+                $('#messageList').append($('<li>').text(data));
+            });
+
+            // Event handler for sending messages
+            $('#sendBtn').on('click', function () {
+                var message = $('#message_input').val();
+                socket.send(message);
+                $('#message_input').val(''); // Clear the input field after sending
+            });
+
+            // Event handler for user connection
+            socket.on('connect', function() {
+                socket.send("User connected!");
+            });
+        });
+    </script>
+
+</body>
+</html>
