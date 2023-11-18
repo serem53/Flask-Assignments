@@ -1,19 +1,56 @@
-Flask Projects Repository
+# Flask Projects Repository
+
 This repository contains a collection of Flask projects, each demonstrating various aspects of web development with Flask.
 
-Projects Overview
-1. Hello, World!
-Description: A simple Flask app that displays "Hello, World!" on the homepage.
-Source Code: Link to Hello World Project
-2. Static HTML Pages Navigation
-Description: A Flask app featuring static HTML pages with navigation between them.
-Source Code: Link to Static HTML Pages Navigation Project
-3. Dynamic Content with URL Parameters
-Description: A Flask app that utilizes URL parameters to display dynamic content.
-Source Code: Link to Dynamic Content Project
-4. User Input Form
-Description: Flask app with a form that accepts user input and displays it.
-Source Code: Link to User Input Form Project
-5. User Sessions Implementation
-Description: Flask app implementing user sessions to store and display user-specific data.
-Source Code: Link to User Sessions Project
+## Projects Overview
+
+### 1. Hello, World!
+
+- **Description:** A simple Flask app that displays "Hello, World!" on the homepage.
+- **Source Code:** [Link to Hello World Project](https://github.com/serem53/Flask-Assignments/blob/basics_of_flask/1st_project.py)
+
+### 2. Static HTML Pages Navigation
+
+- **Description:** A Flask app featuring static HTML pages with navigation between them.
+- **Source Code:** [Link to Static HTML Pages Navigation Project](link-to-static-pages-project)
+
+### 3. Dynamic Content with URL Parameters
+
+- **Description:** A Flask app that utilizes URL parameters to display dynamic content.
+- **Source Code:** [Link to Dynamic Content Project](link-to-dynamic-content-project)
+
+### 4. User Input Form
+
+- **Description:** Flask app with a form that accepts user input and displays it.
+- **Source Code:** [Link to User Input Form Project](link-to-user-input-form-project)
+
+### 5. User Sessions Implementation
+
+- **Description:** Flask app implementing user sessions to store and display user-specific data.
+- **Source Code:** [Link to User Sessions Project](link-to-user-sessions-project)
+
+## How to Run
+
+Follow the instructions below to run each Flask project:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    ```
+
+2. Change into the project directory:
+
+    ```bash
+    cd your-repository
+    ```
+
+3. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the Flask app:
+
+    ```bash
