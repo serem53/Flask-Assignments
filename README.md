@@ -12,22 +12,22 @@ This repository contains a collection of Flask projects, each demonstrating vari
 ### 2. Static HTML Pages Navigation
 
 - **Description:** A Flask app featuring static HTML pages with navigation between them.
-- **Source Code:** [Link to Static HTML Pages Navigation Project](link-to-static-pages-project)
+- **Source Code:** [Link to Static HTML Pages Navigation Project](https://github.com/serem53/Flask-Assignments/blob/basics_of_flask/2nd_project.py)
 
 ### 3. Dynamic Content with URL Parameters
 
 - **Description:** A Flask app that utilizes URL parameters to display dynamic content.
-- **Source Code:** [Link to Dynamic Content Project](link-to-dynamic-content-project)
+- **Source Code:** [Link to Dynamic Content Project](https://github.com/serem53/Flask-Assignments/blob/basics_of_flask/3rd_project.py)
 
 ### 4. User Input Form
 
 - **Description:** Flask app with a form that accepts user input and displays it.
-- **Source Code:** [Link to User Input Form Project](link-to-user-input-form-project)
+- **Source Code:** [Link to User Input Form Project](https://github.com/serem53/Flask-Assignments/blob/basics_of_flask/4th_project.py)
 
 ### 5. User Sessions Implementation
 
 - **Description:** Flask app implementing user sessions to store and display user-specific data.
-- **Source Code:** [Link to User Sessions Project](link-to-user-sessions-project)
+- **Source Code:** [Link to User Sessions Project](https://github.com/serem53/Flask-Assignments/blob/basics_of_flask/5th_project.py)
 
 ## How to Run
 
