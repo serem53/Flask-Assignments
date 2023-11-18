@@ -46,6 +46,7 @@ Follow the instructions below to run each Flask project:
     ```
 
 4. Run the Flask app you want for example:
-     1st_project.py
-    ```bash
     
+    ```bash
+     1st_project.py
+    ```
